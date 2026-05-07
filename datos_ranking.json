@@ -1,0 +1,68 @@
+{
+  "modelos": [
+    {
+      "posicion": 1,
+      "modelo": "Kimi K2.5 / K2.6",
+      "compania": "Moonshot AI",
+      "descripcion": "Líder en razonamiento profundo, agentic workflows, tool-calling y tareas complejas.",
+      "score": 1245,
+      "vram": "18-28 GB"
+    },
+    {
+      "posicion": 2,
+      "modelo": "Qwen 3.6 32B MoE",
+      "compania": "Alibaba",
+      "descripcion": "Mejor multilingual (español excelente), coding y eficiencia MoE.",
+      "score": 1238,
+      "vram": "14-24 GB"
+    },
+    {
+      "posicion": 3,
+      "modelo": "DeepSeek V4 / R1",
+      "compania": "DeepSeek",
+      "descripcion": "Especialista en matemáticas, razonamiento deductivo y agentic.",
+      "score": 1230,
+      "vram": "16-28 GB"
+    },
+    {
+      "posicion": 4,
+      "modelo": "GLM-5",
+      "compania": "Zhipu AI",
+      "descripcion": "Fuerte en coding, software engineering y agentic de largo plazo.",
+      "score": 1215,
+      "vram": "18-26 GB"
+    },
+    {
+      "posicion": 5,
+      "modelo": "Gemma 4 31B",
+      "compania": "Google",
+      "descripcion": "Mejor eficiencia + multimodal (texto + imagen + audio).",
+      "score": 1208,
+      "vram": "14-22 GB"
+    },
+    {
+      "posicion": 6,
+      "modelo": "MiniMax M2.7",
+      "compania": "MiniMax",
+      "descripcion": "Enfocado en productividad y workflows de ingeniería.",
+      "score": 1195,
+      "vram": "16-24 GB"
+    },
+    {
+      "posicion": 7,
+      "modelo": "Mistral Small 4",
+      "compania": "Mistral",
+      "descripcion": "Velocidad + calidad equilibrada para uso diario.",
+      "score": 1180,
+      "vram": "14-20 GB"
+    },
+    {
+      "posicion": 8,
+      "modelo": "Qwen 3.5 Coder",
+      "compania": "Alibaba",
+      "descripcion": "Variante especializada en coding puro y desarrollo.",
+      "score": 1170,
+      "vram": "12-22 GB"
+    }
+  ]
+}
