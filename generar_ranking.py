@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 import subprocess
 
-# Cargar datos
+# ================== CARGAR DATOS ==================
 with open("datos_ranking.json", encoding="utf-8") as f:
     data = json.load(f)
 
@@ -63,12 +63,14 @@ with open("ranking_ia_local.html", "w", encoding="utf-8") as f:
 
 print(f"✅ Ranking generado - {fecha_hoy}")
 
-# Push automático a GitHub
+# ================== PUSH FORZADO DIARIO ==================
 try:
-    subprocess.run(["git", "add", "ranking_ia_local.html"], check=True, capture_output=True)
-    subprocess.run(["git", "commit", "-m", f"Actualización ranking iA Local - {fecha_hoy}"], check=True, capture_output=True)
-    subprocess.run(["git", "push"], check=True, capture_output=True)
-    print("🚀 Push automático a GitHub completado")
-except Exception:
-    print("⚠️ Push no realizado (primera vez o sin cambios)")
+    subprocess.run(["git", "add", "ranking_ia_local.html"], check=True)
+    subprocess.run(["git", "commit", "-m", f"Actualización ranking iA Local - {fecha_hoy}"], check=True)
+    subprocess.run(["git", "push"], check=True)
+    print("🚀 Push forzado a GitHub completado")
+except subprocess.CalledProcessError:
+    print("ℹ️ No había cambios nuevos")
+except Exception as e:
+    print(f"⚠️ Error en git: {e}")
     
